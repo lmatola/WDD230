@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Student Identification Card</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script defer src="js/dates.js"></script>
 </head>
+
 <body>
-<h1>Testing</h1>
-<footer>Hello World wdd230 matsolo</footer>
-    
+
+	<header>
+		<img src="images/me.jpg" alt="My Image" width="120"/>
+		<h1>Lázaro F. Matola</h1>
+	</header>
+
+	<main>
+		<h2>WDD230:Assignment Portal</h2>
+		<ul>
+			<li>Lesson 02: Assignment Link</li>
+			<li>Lesson 03: Assignment Link</li>
+			<li>Lesson 04: Assignment Link</li>
+		</ul>
+	<main>
+	<footer>
+		<div class= "copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro Felizardo Matola ǀ Uthah ǀBYU ǀ On-line Learning </div>
+	
+		<p>Last updated <span id="modify"></span>.</p>
+		<script>
+			document.getElementById("modify").innerHTML = document.lastModified
+		</script>
+					
+	</footer>	
+	
 </body>
 </html>
