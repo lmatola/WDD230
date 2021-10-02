@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Assignment: weather-Site</title>
+	<meta
+	name="description"
+	content="This page is a working example of the WDD 230 week 2 assignment."
+	/>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300&display=swap"
+	rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="css/meteorology.css"/>	
+	<script defer src="js/lastmodified.js"></script>
+</head>
+
+<body>
+	<div id="content">
+	<header>
+		
+		<div class="logo-box"><img src="images/logo.jpg" alt="Logo image" width="100"/></div>
+				<nav>
+					
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="target-audience.html">Target Audience</a></li>
+							<li><a href="color-scheme.html">Color Scheme</a></li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul>
+					
+				</nav>
+		
+	</header>
+
+	<main>
+
+		<div class="grid">
+			<h2> Site name:I weather</h2>
+
+			<h2>Description</h2>
+
+			<p>I Weather offers unique weather forecasts in over 100 languages and dialects with Superior 
+				Accuracy™ for all corners of the world – more local than any other government or private weather forecast service.</p>
+				
+			<h2>Site propose:</h2>
+								
+			<p>	Provide accurate and up-to-date information to rural producers and fishermen 
+				on weather forecasts in their locality and differentiated by production. 
+				Through a portal and an application (Android and IOS), it will be possible to 
+				access a navigable rain, temperature and humidity forecast map for the next seven days.</p>
+				
+			<h2>Domain Name:</h2>
+			<p>Iweather.com</p>
+				
+			<h2>Logo:</h2>
+			<div class="logo-box"><img src="images/logo.jpg" alt="Logo image" width="80"/></div>
+
+
+		</div>
+	
+	</main>
+	<footer>
+	<div class="footer">
+	<div class="copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro F Matola ǀ Uthah ǀBYU ǀ On-line Learning </div>
+	
+		<p>Last updated <span id="modify"></span>.</p>
+		<script>
+			document.getElementById("modify").innerHTML = document.lastModified
+		</script>
+	</div>	
+	</footer>
+</div>
+		
+</body>
+</html>
