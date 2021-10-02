@@ -57,3 +57,26 @@ h2{
 p {
     font-size: 1.2em;
 }
+
+
+
+@media screen and (max-width: 940px) {
+    .grid {
+      display: block;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    nav li {
+      float: none;;
+      text-align: center;
+      width: 100%;
+      
+    }
+
+    header img{
+      display: none;  
+    }
+
+  }
