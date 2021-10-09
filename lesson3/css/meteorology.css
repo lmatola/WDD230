@@ -9,6 +9,7 @@ header {
     grid-template-columns: 200px auto;
     background-color: #40356F;
     border-radius: 1em;
+    
 }
 
 footer {
@@ -33,6 +34,7 @@ nav ul {
 nav a {
     color: #f1f5f8;
     text-decoration:None;
+ 
 }
       
 nav a:hover {

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="Lazaro Felizardo Matola" content="site plan for weather forecast">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>WDD 230 ׀ WEEK 4 ׀ PRESTON PAGE SITE</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+   
+</head>
+
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <picture> 
+            <img src="images/logoss.png" alt="my logo">
+        </picture>
+       
+		
+        <section class="headings">
+                <h1>Instant Weather</h1>
+                <q class="moto">Your weather now!</q>
+        </section>
+     
+    </header>    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+		<button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="">
+
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>           
+            <li><a href="#">Soda Spring</a></li>  
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="box">Hero W / Weather Summary</div>
+        <div class="box">5 Days Forecast</div>
+        <div class="box">Article</div>
+        <div class="box">Contact Information</div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+
+        <div class="footer">
+            <div class="copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro Felizardo Matola ǀ Maputo ǀMozambique ǀ <a href="https://www.byui.edu/online/">BYU- Idaho On-line Learning</a></div>
+            
+            <p>Current Date: <span id='date-time'></span>.</p>
+            </div>	
+
+    </footer>
+    
+<script src="js/scripts.js"></script>
+</body>
+</html>
