@@ -1,0 +1,328 @@
+*{
+    margin-left: .5px;
+    box-sizing: border-box;
+}
+
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,3059ff+0,0500aa+100 */
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 0%, #3059ff 0%, #0500aa 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 0%,#3059ff 0%,#0500aa 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #1e5799 0%,#207cca 0%,#3059ff 0%,#0500aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0500aa',GradientType=0 ); /* IE6-9 */
+        
+    }
+
+
+
+    header {
+        background-color: teal;
+    }
+    
+
+nav button {
+    display: none;
+}
+
+nav ul.hide {
+    display: block;
+}
+
+nav ul {
+    margin-left: 2%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);  
+    padding: .8rem 2.5rem;
+}
+
+
+
+header img {
+    width: 90%;
+}
+
+.headings h1 {
+    font-size: 3rem;
+    color: #4b2bd8;
+}
+
+.moto {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+    color: #fff;
+    
+}
+
+.to {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+    color: #fff;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 100% auto;
+    background-color: teal;    
+    color: #fff;
+    text-align: center;  
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;    
+    padding: 1rem;
+    font-size: .9rem;
+  
+}
+
+
+footer a {
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    color: #4b2bd8;  
+}
+
+  
+  .copyright {
+    height: 55px;
+    line-height: 55px;  
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+h1 {
+	font-size: 1.8em;
+	border-bottom: 1px solid rgb(5, 67, 252);
+    font-family: Acme, Arial, sans-serif;
+    text-align: center;
+}
+h2 {
+	font-size: 1.4em;
+	color: rgb(40, 3, 245);
+	font-family: Acme, Arial, sans-serif;
+    margin-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 67, 252);
+}
+
+}
+h3 {
+
+    width: 150px;
+	font-size: 1em;
+	color: rgb(40, 3, 245);
+	font-family: Acme, Arial, sans-serif;    
+    text-align: left;
+    border-bottom: 1px solid rgb(5, 67, 252);
+    opacity: 100%;
+ 
+}
+
+
+.tiny {
+	font-size: .8rem;
+}
+
+.tomato {
+	color: tomato;
+}
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: rgb(16, 20, 245);
+}
+
+.flex-col, .column-col, .grid-col {
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+
+
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+
+
+.flex, .column, .grid {
+	border-right: 1px solid #333;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+img {
+	border-radius: 100px;
+    padding: 0.25rem;
+    
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.col-head,th {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+}
+
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1em;
+  }
+
+.banner img {
+    width: 80%;   
+    padding: 5px; 
+    border-radius: 0;
+    margin-left: 10%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1;
+    
+} 
+
+
+.container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    background-color: cornflowerblue;
+
+}
+
+.hero {  
+    
+    margin-top: 4.5em;
+    grid-row: 1;
+    grid-column: 1;
+    display: block;
+    border-radius:10px;
+    background-color: rgb(65, 45, 243);
+    width: 170px;
+    padding: 2px;
+    opacity: 70%;
+    height: 170px;
+    margin-left: 40%;
+  
+}
+
+.hero h3{ 
+
+    text-align: left;
+    line-height: 0.8em;
+    display: block;  
+    padding: 2px;
+    opacity: 100%;
+    color: rgb(243, 4, 4);
+}
+
+.hero .ar{ 
+
+    text-align: right;
+    color: white;
+   
+}
+
+.hero .al{ 
+
+    color: yellow;
+   
+}
+
+.article {
+    margin-top: 0.8em;
+    grid-row: 2/7;
+    grid-column: 1/7;
+    display: block; 
+    width: 100%;
+    padding: 2px;
+    opacity: 80%;
+    font-family: sans-serif;
+    line-height: 25px;  
+  
+}
+
+.contact {
+
+    margin-top: 0.8em; 
+    width: 100%;
+    padding: 4px;
+    opacity: 80%;
+
+       
+}
+
+.article img {
+    float: left;
+    margin-right: 30px; 
+    border-radius: 0;
+    box-shadow: 5px 5px 5px #999;
+}
+
+
+.social img {
+    float: right;
+    margin-right: 10px; 
+    border-radius: 0;
+    grid-row: 1/7;
+    grid-column:1/2; 
+    border-radius: 0;
+
+}
+
+.contact .mapa img{
+    border-radius: 0;
+}
+
+.contact p{
+   float: right;
+   margin-right: 50%;
+}
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+/*end large */
