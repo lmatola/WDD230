@@ -19,12 +19,12 @@ ducument.addEventListener("DOMContentLoad", function(){
   });
   
   function buildMoDate(){
-    const dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday"];
-    const montArray = ["January", "February", "March", "April", "May", "June", "July", "August",
-    "September", "October", "November", "December"];
+    const dayArray = ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday");
+    const montArray = ("January", "February", "March", "April", "May", "June", "July", "August",
+    "September", "October", "November", "December");
     let lastMod =  new Date(document.lastModified);
-    const dayNme = dayArray[lastMod.getDay()];
-    const monthNme = montArray[lastMod.getMonth()];
+    const dayNme = dayArray(lastMod.getDay());
+    const monthNme = montArray(lastMod.getMonth());
     const formatteDate = dayName +" "+lastMod.getDate() + " "+monthName+" "+lastMod.getFullYear();
     document.querySelector("#modDate").innerText = formattedDate;
   }
@@ -37,7 +37,7 @@ ducument.addEventListener("DOMContentLoad", function(){
 
 
   function buildwc(speed, temp) {
-    let feelTemp = document.getElementById("feelTemp");
+    let feelTemp = document.getElementById("al");
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
     
     console.log(wc);
@@ -63,4 +63,46 @@ ducument.addEventListener("DOMContentLoad", function(){
     // form.windchill.value = chill;
     // }
     // //  End -->
+
+
+    var hour, min, sec;
+
+    var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday");
+    var month = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+    "September", "October", "November", "December");
+
+    var clock = function(){
+
+        var date = new Date();
+
+        hour = date.getHours().toString().length < 2 ? "0" + date.getHours() : date.getHours();
+        min = date.getMinutes().toString().length < 2 ? "0" + date.getMinutes() : date.getMinutes();
+        sec = date.getSeconds().toString().length < 2 ? "0" + date.getSeconds() : date.getSeconds();
+
+        var time = hour + ":" + min + ":" + sec;
+
+        var fullDate = day[date.getDay()] + ", " + date.getDate() + " de " + month[ date.getMonth()] + date.getFullYear();
+
+        console.log(date.getDay());
+
+        document.getElementById("time").innerHTML=time;
+        document.getElementById("date").innerHTML=fullDate;
+    }
+
+    clock();
+
+    setInterval( function(){
+        clock();
+    },1000);
+
+
+
+
+
+
+    let lastMod =  new Date(document.lastModified);
+    const dayNme = dayArray(lastMod.getDay());
+    const monthNme = montArray(lastMod.getMonth());
+    const formatteDate = dayName +" "+lastMod.getDate() + " "+monthName+" "+lastMod.getFullYear();
+    document.querySelector("#modDate").innerText = formattedDate;
   

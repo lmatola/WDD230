@@ -19,6 +19,7 @@
 <link href="css/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
+<script src="js/scripts.js"></script>
    
 </head>
 
@@ -27,6 +28,7 @@
    
 <!-- HEADER HERE -->
 	<header>
+        
         <picture> 
             <img src="images/logoss.png" alt="my logo">
         </picture>
@@ -36,6 +38,7 @@
                 <h1>Instant Weather</h1>
                 <q class="moto">Your weather now!</q>
         </section>
+
      
     </header>    
     
@@ -67,10 +70,11 @@
             <div class="galery" id="galery2">          
                 <picture class="photoA">
 
-                    <source media="(max_width: 200px)" srcset="images/wdd200.jpg">
-                    <source media="(max_width: 500px)" srcset="images/wdd500.jpg">
-                    <source media="(max_width: 800px)" srcset="images/wdd800.jpg">
-                    <img src="images/wdd1100.jpg" alt="church">
+                    <img src="images/wdd1100.jpg" alt="church"
+                    srcset="images/wdd200.jpg 200w,
+                    images/wdd500.jpg 500w,
+                    images/wdd800.jpg 800w,
+                    images/wdd1100.jpg 1100w">                   
                                     
                 </picture>
                 
@@ -223,6 +227,8 @@
         </div>        
         
     </section>  
+
+    
     
     
 
@@ -233,12 +239,59 @@
         <div class="footer">
             <div class="copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro Felizardo Matola ǀ Maputo ǀMozambique ǀ <a href="https://www.byui.edu/online/">BYU- Idaho On-line Learning</a></div>
             
-            <p>Current Date: <span id='modDate'></span>.</p>
+            <p>Current Date: <span id="date"></span>.</p>
+            <h4 class="time" id="time">22:00:00</h4>
+
             </div>	
 
     </footer>
     
-<script src="js/scripts.js"></script>
+
 </div>
+<script type="text/javascript">
+
+    var hour, min, sec;
+
+        var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var month = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December");
+
+        var clock = function(){
+
+        var date = new Date();
+
+        hour = date.getHours().toString().length < 2 ? "0" + date.getHours() : date.getHours();
+        min = date.getMinutes().toString().length < 2 ? "0" + date.getMinutes() : date.getMinutes();
+        sec = date.getSeconds().toString().length < 2 ? "0" + date.getSeconds() : date.getSeconds();
+
+        var time = hour + ":" + min + ":" + sec;
+
+        var fullDate = day[date.getDay()] + ", " + date.getDate() + " de " + month[ date.getMonth()] + " " + date.getFullYear();
+
+        console.log(date.getDay());
+
+        document.getElementById("time").innerHTML=time;
+        document.getElementById("date").innerHTML=fullDate;
+        }
+
+        clock();
+
+        setInterval( function(){
+        clock();
+        },1000);
+
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+        WebFont.load({
+            google: {
+            families: [
+                'Roboto'
+            ]
+            }
+        });
+</script>
+
 </body>
 </html>
