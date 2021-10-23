@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="Lazaro Felizardo Matola" content="site plan for weather forecast">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>WDD 230 ׀ WEEK 6 ׀ PRESTON PAGE SITE</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+   
+</head>
+
+<body>
+
+   
+<!-- HEADER HERE -->
+	<header>
+        <picture> 
+            <img src="images/logoss.png" alt="my logo">
+        </picture>
+       
+		
+        <section class="headings">
+                <h1>Instant Weather</h1>
+                <q class="moto">Your weather now!</q>
+        </section>
+     
+    </header>    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+		<button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="">
+
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>           
+            <li><a href="#">Soda Spring</a></li>  
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE --> 
+    
+    <section>
+
+
+        
+            
+            <h1 class="text-center">Preston Idaho</h1>
+            
+            <div class="galery" id="galery2">          
+                <picture class="photoA">
+
+                    <source media="(max_width: 200px)" srcset="images/wdd200.jpg">
+                    <source media="(max_width: 500px)" srcset="images/wdd500.jpg">
+                    <source media="(max_width: 800px)" srcset="images/wdd800.jpg">
+                    <img src="images/wdd1100.jpg" alt="church">
+                                    
+                </picture>
+                
+                
+            
+
+                <aside class="hero z-index">                
+                    <h3>Weather Summary</h3>
+                    <table>
+                        <tr>
+                            <td class="ar">Currently:</td>
+                            <td class="al">Sunny</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="ar">High:</td>
+                            <td class="al">79ºF</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="ar">Wind Chill:</td>
+                            <td class="al">85ºF</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="ar">Humidity:</td>
+                            <td class="al">68%</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="ar">Wind Speed:</td>
+                            <td class="al">5 mph</td>
+                        </tr>    
+            
+                    </table>
+                                
+                </aside>
+
+        </div>      
+
+    </section>
+
+
+    <section> 
+
+        <div class="container">         
+                                             
+            <h2 class="text-center">5 Days Forecast</h2>
+
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head">Wed</span>
+                    <img src="images/day.jpg" alt="kitten!" width="100">
+                    <span class="data">82ºF</span>
+                </div>
+            
+                <div class="flex-col">
+                    <span class="col-head">Thu</span>
+                    <img src="images/day1.jpg" alt="kitten!" width="100">
+                    <span class="data">58ºF</span>
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head">Fri</span>
+                    <img src="images/day.jpg" alt="kitten!" width="100">
+                    <span class="data">88ºF</span>
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head">Sat</span>
+                    <img src="images/day.jpg" alt="kitten!" width="100">
+                    <span class="data">76ºF</span>
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head">Sun</span>
+                    <img src="images/day1.jpg" alt="kitten!" width="100">
+                    <span class="data">57ºF</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> 
+    
+    
+    <section>
+
+        <div class="container">
+
+            <h2 class="text-center">Article</h2>
+            
+            <div class="split">
+                
+    
+                <div>
+                    <picture class="photoB">
+                        <source media="(max_width: 200px)" srcset="images/pescadores200.jpg">
+                        <source media="(max_width: 500px)" srcset="images/pescadores500.jpg">
+                        <source media="(max_width: 800px)" srcset="images/pescadores800.jpg">
+                        <img src="images/pescadores.jpg" alt="church">
+                                      
+                    </picture>
+                </div>
+    
+                <div><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor,
+                eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum
+                luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet.
+                Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci 
+                vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex 
+                malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac
+                imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis
+                ornare egestas augue ut luctus. Proin blandit quam nec lacus varius 
+                commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p></div>
+            </div>
+                
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="container">
+                                
+            <h2 class="text-center">Contact Information</h2>
+
+            <div class="split">
+                <div class="mapa"><img src="images/prestonmapa.jpg" alt="kitten!" width="320"></div>
+    
+                <div class="contact">
+                    <div>
+                        <p>Instant Weather <br>
+                            30 N 1st E <br>
+                            Preston, ID B2344 <br>
+                            555.999.5555 <br>
+                            instantweather@gmail.com</p> 
+                    </div>                
+                    
+                    <div class= "social">
+                        
+                        <a href="https://web.facebook.com/?stype=lo&jlou=Afd-rWEXcS3oKHh9u4irJ80yLY8nqQ37hwxD6OFdTpLKBkS-f-TQMWofC6Y0wjIEWxPXYZ0aCyoU0As11_t9W_8l7VPLPjkwFCfnloeUSisIpA&smuh=62857&lh=Ac82odeY-90H9LD_lEE" target="_blank"><img src="images/face.jpg" alt="facebook logo" width="60"/></a>
+                        <a href="https://www.instagram.com/lazarofelizardo/" target="_blank"><img src="images/insta.jpg" alt="instagram logo" width="60"/></a>
+                        <a href="https://mail.google.com/mail/u/1/" target="_blank"><img src="images/ggg.jpg" alt="gmail logo" width="51"/></a>
+                    </div> 
+                </div>
+            </div>              
+
+        </div>        
+        
+    </section>  
+    
+    
+
+    
+<!-- FOOTER HERE -->   
+    <footer>
+
+        <div class="footer">
+            <div class="copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro Felizardo Matola ǀ Maputo ǀMozambique ǀ <a href="https://www.byui.edu/online/">BYU- Idaho On-line Learning</a></div>
+            
+            <p>Current Date: <span id='modDate'></span>.</p>
+            </div>	
+
+    </footer>
+    
+<script src="js/scripts.js"></script>
+</div>
+</body>
+</html>

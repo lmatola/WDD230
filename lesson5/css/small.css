@@ -153,7 +153,7 @@ footer {
     }
 
     .flex-col{
-        display: none;
+        display: block;
     }
 
 } /*end medium */

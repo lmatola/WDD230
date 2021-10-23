@@ -314,6 +314,35 @@ img {
 
 
 
+picture.photoA {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+
+    
+}
+
+main picture.photoA img, main picture.photoB img {
+    width: 100%;
+    border-radius: 0;
+}
+
+
+main picture.photoA, div, main picture.photopB, div {
+    text-align: center;
+    font-weight: 500;
+    color: #080808;
+}
+
+picture.photoB {
+    display: block;
+    float: left;
+    width: 40%;
+     
+}
+
+
+
 
 
 
