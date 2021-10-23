@@ -153,7 +153,11 @@ footer {
     }
 
     .flex-col{
+<<<<<<< HEAD
         display: block;
+=======
+        display: none;
+>>>>>>> cefd746f0987bf5d155199b378a354b39a32d7cf
     }
 
 } /*end medium */
