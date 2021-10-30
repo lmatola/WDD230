@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="Lazaro Felizardo Matola" content="site plan for weather forecast">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>WDD 230 ׀ WEEK 6 ׀ PRESTON PAGE SITE</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+   
+</head>
+
+<body>
+
+   
+<!-- HEADER HERE -->
+	<header>
+        
+        <picture> 
+            <img src="images/logoss.png" alt="my logo">
+        </picture>
+       
+		
+        <section class="headings">
+                <h1>Instant Weather</h1>
+                <q class="moto">Your weather now!</q>
+        </section>
+
+     
+    </header>    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+		<button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson6/preston_site.html" target="_blank">Preston</a></li>          
+            <li><a href="#">Soda Spring</a></li>  
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>            
+			<li><a href="/lesson7/gallery-7.html" target="_blank">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE --> 
+
+    <h1>weather Gallery</h1>
+
+    <div class="container">
+        
+        <div class="box">
+            <img src="images/weather-1.jpg" alt="weather">
+            <figcaption>weather image-1</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-2.jpg" alt="weather">
+            <figcaption>weather image-2</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-3.jpg" alt="weather">
+            <figcaption>weather image-3</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-4.jpg" alt="weather">
+            <figcaption>weather image-4</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-5.jpg" alt="weather">
+            <figcaption>weather image-5</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-6.jpg" alt="weather">
+            <figcaption>weather image-6</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-7.jpg" alt="weather">
+            <figcaption>weather image-7</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-8.jpg" alt="weather">
+            <figcaption>weather image-8</figcaption>
+        </div>
+
+        <div class="box">
+            <img src="images/weather-9.jpg" alt="weather">
+            <figcaption>weather image-9</figcaption>
+        </div>
+    </div>
+
+
+   
+
+
+
+    
+    
+    
+<!-- FOOTER HERE -->   
+    <footer>
+
+        <div class="footer">
+            <div class="copyright"> &copy; <span id="copyrightyear"></span> ǀ Lázaro Felizardo Matola ǀ Maputo ǀMozambique ǀ <a href="https://www.byui.edu/online/">BYU- Idaho On-line Learning</a></div>
+            
+            <p>Current Date: <span id="date"></span>.</p>
+            <h4 class="time" id="time">22:00:00</h4>
+
+            </div>	
+
+    </footer>
+    
+
+</div>
+<script type="text/javascript">
+
+    var hour, min, sec;
+
+        var day = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var month = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December");
+
+        var clock = function(){
+
+        var date = new Date();
+
+        hour = date.getHours().toString().length < 2 ? "0" + date.getHours() : date.getHours();
+        min = date.getMinutes().toString().length < 2 ? "0" + date.getMinutes() : date.getMinutes();
+        sec = date.getSeconds().toString().length < 2 ? "0" + date.getSeconds() : date.getSeconds();
+
+        var time = hour + ":" + min + ":" + sec;
+
+        var fullDate = day[date.getDay()] + ", " + date.getDate() + " de " + month[ date.getMonth()] + " " + date.getFullYear();
+
+        console.log(date.getDay());
+
+        document.getElementById("time").innerHTML=time;
+        document.getElementById("date").innerHTML=fullDate;
+        }
+
+        clock();
+
+        setInterval( function(){
+        clock();
+        },1000);
+
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+        WebFont.load({
+            google: {
+            families: [
+                'Roboto'
+            ]
+            }
+        });
+</script>
+<script src="script.js"></script> 
+</body>
+</html>
