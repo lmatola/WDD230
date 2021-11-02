@@ -1,0 +1,167 @@
+*{
+    margin-left: .5px;   
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --ff-pprimary:"Roboto", sans-serif;
+    --ff-accent:"Playfair Display", serif;
+}
+
+
+
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,3059ff+0,0500aa+100 */
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 0%, #3059ff 0%, #0500aa 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 0%,#3059ff 0%,#0500aa 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #1e5799 0%,#207cca 0%,#3059ff 0%,#0500aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0500aa',GradientType=0 ); /* IE6-9 */
+        
+    }
+
+
+
+header {
+    background-color: teal;
+}
+    
+
+nav button {
+    display: none;
+}
+
+nav ul.hide {
+    display: block;
+}
+
+nav ul {
+    margin-left: 2%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);  
+    padding: .8rem 2.5rem;
+}
+
+
+
+header img {
+    width: 90%;
+}
+
+.headings h1 {
+    font-size: 3rem;
+    color: #4b2bd8;
+}
+
+.moto {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+    color: #fff;
+    
+}
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 100% auto;
+    background-color: teal;    
+    color: #fff;
+    text-align: center;  
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;    
+    padding: 1rem;
+    font-size: .9rem;
+  
+}
+
+
+footer a {
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    color: #4b2bd8;  
+}
+
+  
+  .copyright {
+    height: 55px;
+    line-height: 55px;  
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+h1 {
+	font-size: 1.8em;
+	border-bottom: 1px solid rgb(5, 67, 252);
+    font-family: Acme, Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: rgb(40, 3, 245);
+	font-family: Acme, Arial, sans-serif;
+    margin-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 67, 252);
+}
+
+}
+
+
+
+/* rounded corners - boxmodel */
+
+/* .rocorn {border-radius: 5px 150px;}
+/* simple opacity */
+/* .opac {opacity: .5;}
+.blur {filter: blur(1px) grayscale(75%);}
+.object {width: 100%; height: 100px ; object-fit: cover;}
+.shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; shape-outside: circle();} */
+ 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+h1 {
+	font-size: 1.8em;
+	border-bottom: 1px solid rgb(5, 67, 252);
+    font-family: Acme, Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+       
+}
+
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+
+.box:hover {
+    
+    box-shadow: 0 0 50px #333;}
