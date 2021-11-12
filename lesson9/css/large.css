@@ -88,7 +88,7 @@ footer {
     text-align: center;  
     font-family: Verdana, sans-serif;
     margin: 0 auto;    
-    padding: 1rem;
+    padding: .3rem;
     font-size: .9rem;
   
 }
@@ -97,13 +97,13 @@ footer {
 footer a {
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    color: #4b2bd8;  
+    color: red;  
 }
 
-  
+
   .copyright {
-    height: 55px;
-    line-height: 55px;  
+    height: 15px;
+    line-height: 15px;  
   }
 
 
@@ -157,6 +157,17 @@ img {
        
 }
 
+.container img {
+    width: 50%;
+       
+}
+section img {
+    width: 50%;
+       
+}
+
+
+
 figcaption {
     text-align: center;
     font-size: smaller;
@@ -174,3 +185,4 @@ form label.sbs {
        
     
 }  
+
